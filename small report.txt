@@ -1,0 +1,18 @@
+Check if the browser supports geolocation. &
+
+The Geolocation Map with Routing project utilizes Leaflet and Leaflet Routing Machine to create an interactive web map. Users can click on the map to add new markers and generate routes between an initial fixed location and the clicked locations. The project demonstrates basic geolocation, map interaction, and route calculation functionalities.
+
+Initialize a map centered at coordinates (0, 0) with a zoom level of 11 using Leaflet. Add OpenStreetMap tiles to the map
+A marker is placed at the initial coordinates.
+
+Users can click anywhere on the map to add a new marker. A route is automatically generated between the initial marker and the new marker. The initial marker moves along the generated route to the new marker's position.
+
+The route is calculated and displayed using the Leaflet Routing Machine[https://www.liedman.net/leaflet-routing-machine/]. The marker movement along the route is animated with a delay for visual effect.
+
+A tile layer from OpenStreetMap is added to the map.
+An initial marker is placed at the starting/center coordinates.
+An event listener for click events on the map adds a new marker at the clicked location and calculates the route from the initial marker to the new marker.
+The route's coordinates are used to animate the movement of the initial marker along the route.
+Click on any location on the map to add a new marker.
+A route will be generated and displayed between the initial marker and the new marker.
+The initial marker will move along the calculated route.
